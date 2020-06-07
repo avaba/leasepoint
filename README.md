@@ -1,4 +1,4 @@
-# gulp-scss-starter
+# leasepoint
 
 ![GitHub release](https://img.shields.io/github/release/andreyalexeich/gulp-scss-starter.svg)
 [![dependencies Status](https://david-dm.org/andreyalexeich/gulp-scss-starter/status.svg)](https://david-dm.org/andreyalexeich/gulp-scss-starter)
