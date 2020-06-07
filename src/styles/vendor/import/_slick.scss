@@ -1,0 +1,39 @@
+.slick-arrow {
+	font-size: 0;
+	width: 52px;
+	height: 52px;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	z-index: 1;
+	background: rgba(255, 255, 255, 0.45);
+	border: 0;
+	border-radius: 100%;
+	transition: all .2s;
+	&:before {
+		content: '';
+		position: relative;
+		display: inline-block;
+		width: 9px;
+		height: 16px;
+		background: url(../img/svg/arrow.svg);
+		z-index: 1;
+	}
+	&:hover {
+		cursor: pointer;
+		background: $white;
+		transition: all .2s;
+	}
+}
+
+.slick-prev {
+	left: 30px;
+}
+
+.slick-next {
+	right: 30px;
+	&:before {
+		transform: rotate(180deg);
+	}
+}

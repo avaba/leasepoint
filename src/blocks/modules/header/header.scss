@@ -1,0 +1,98 @@
+$pfx: "header";
+
+.#{$pfx} {
+	background: $accent;
+	color: $white;
+	padding: 20px 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+	&__wrap {
+		@include row-flex();
+		@include md(justify-content, space-between);
+		align-items: stretch;
+		&-col {
+			@include col();
+			display: flex;
+			align-items: center;
+		}
+		&-search {
+			@include col();
+			@include size(5);
+			display: flex;
+			align-items: stretch;
+		}
+	}
+	&__hamburger {
+		height: 30px;
+		width: 30px;
+		border: 1px solid $white;
+		border-radius: 4px;
+		display: flex;
+		align-items: stretch;
+		&-line {
+			display: block;
+			width: 100%;
+			border-top: 2px solid $white;
+			border-bottom: 2px solid $white;
+			margin: 7px 5px;
+			position: relative;
+			&:before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translate(0, -50%);
+				height: 2px;
+				width: 100%;
+				background: $white;
+			}
+		}
+		&:hover {
+			cursor: pointer;
+			opacity: 0.8;
+		}
+	}
+	&__nav {
+		border: 1px solid $white;
+		border-radius: 4px;
+		padding: 0 7px;
+		font-size: 14px;
+		&:hover {
+			cursor: pointer;
+			opacity: 0.8;
+		}
+	}
+	&__search {
+		input {
+			display: block;
+			width: 100%;
+			font-size: 14px;
+			border: 0;
+			border-radius: 4px;
+			padding: 0 0 0 30px;
+			background-color: $white;
+			background-image: url(../img/svg/search.svg);
+			background-repeat: no-repeat;
+			background-position: 10px 50%;
+			height: 100%;
+		}
+	}
+	&__user {
+		a {
+			display: flex;
+			height: 100%;
+			align-items: center;
+		}
+	}
+	&__phone {
+		a {
+			color: $white;
+			font-weight: bold;
+			font-size: 22px;
+		}
+	}
+}
+

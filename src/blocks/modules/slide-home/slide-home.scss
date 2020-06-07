@@ -1,0 +1,18 @@
+$pfx: "slide-home";
+
+.#{$pfx} {
+	margin-top: 70px;
+	&__slide {
+		&-item {
+			min-height: 400px;
+			background-color: #ccc;
+			background-size: cover; background-position: 50%;
+			text-align: center;
+			padding-top: 30px;
+			color: $white;
+			h2 {
+				font-size: 36px;
+			}
+		}
+	}
+}
