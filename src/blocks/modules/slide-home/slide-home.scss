@@ -2,13 +2,14 @@ $pfx: "slide-home";
 
 .#{$pfx} {
 	margin-top: 70px;
+	margin-bottom: 55px;
 	&__slide {
 		&-item {
-			min-height: 400px;
+			min-height: 370px;
 			background-color: #ccc;
 			background-size: cover; background-position: 50%;
 			text-align: center;
-			padding-top: 30px;
+			padding-top: 35px;
 			color: $white;
 			h2 {
 				font-size: 36px;

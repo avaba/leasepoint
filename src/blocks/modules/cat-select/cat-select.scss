@@ -1,0 +1,34 @@
+$pfx: "cat-select";
+
+.#{$pfx} {
+  text-align: center;
+  h2 {
+    margin-bottom: 40px;
+  }
+  &__wrap {
+    @include row-flex();
+    &-col {
+      @include col();
+      @include size(2);
+      display: flex;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    &:hover & {
+      &-title {
+        color: $accent;
+      }
+    }
+    &-img {
+      align-self: center;
+      margin-bottom: 28px;
+    }
+    &-title {
+      color: $text;
+      font-weight: 500;
+    }
+  }
+}
