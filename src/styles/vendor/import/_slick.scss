@@ -37,3 +37,46 @@
 		transform: rotate(180deg);
 	}
 }
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	align-items: center;
+	font-size: 0;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	list-style: none;
+	li {
+		width: 11px;
+		height: 11px;
+		margin-right: 10px;
+		transition: all .2s;	
+		&:last-of-type {
+			margin: 0;
+		}
+		&.slick-active {
+			transform: scale(1.4);
+			transition: all .2s;
+			button {
+				background: $accent;
+			}	
+		}
+		button {
+			height: 100%;
+			width: 100%;
+			border-radius: 100%;
+			border: 2px solid $white;
+			background: none;
+			display: block;
+			padding: 0;
+			background: rgba(0, 171, 255, 0.16);
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}

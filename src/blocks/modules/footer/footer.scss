@@ -1,0 +1,77 @@
+$pfx: "footer";
+
+.#{$pfx} {
+  margin-top: 100px;
+  font-size: 14px;
+  line-height: 1.4;
+  &__soc {
+    text-align: center;
+    border-top: 3px solid $accent;
+    padding: 35px 0;
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      li {
+        margin-right: 15px;
+        &:last-of-type {
+          margin-right: 0;
+        }
+        a {
+          color: $accent;
+          font-size: 20px;
+          width: 42px;
+          height: 42px;
+          border: 2px solid $accent;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 100%;
+          transition: all .2s;
+          &:hover {
+            background: $accent;
+            color: $white;
+            transition: all .2s;
+          }
+        }
+      }
+    }
+  }
+  &__content {
+    background: $accent;
+    padding: 30px 0;
+    color: $white;
+    &_wrap {
+      @include row-flex();
+      &-col {
+        @include col();
+        @include size(3);
+      }
+    }
+    h4 {
+      font-weight: bold;
+      font-size: 14px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 25px;
+      li {
+        margin-bottom: 5px;
+      }
+    }
+    a {
+      color: $white;
+      &:hover {
+        color: #dedede;
+      }
+    }
+  }
+  &__copy {
+    background: #0083C4;
+    color: $white;
+    overflow: hidden;
+  }
+}
