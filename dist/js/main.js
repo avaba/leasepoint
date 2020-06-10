@@ -177,6 +177,27 @@
 
 /***/ }),
 
+/***/ "./src/blocks/modules/partners/partners.js":
+/*!*************************************************!*\
+  !*** ./src/blocks/modules/partners/partners.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {$(function () {
+  $('.partners-slider').slick({
+    dots: true,
+    infinite: false,
+    arrows: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 1
+  });
+});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
 /***/ "./src/blocks/modules/slide-home/slide-home.js":
 /*!*****************************************************!*\
   !*** ./src/blocks/modules/slide-home/slide-home.js ***!
@@ -186,7 +207,7 @@
 
 /* WEBPACK VAR INJECTION */(function($) {$(function () {
   $('.slide-home__slide').slick({
-    dots: false,
+    dots: true,
     infinite: false,
     speed: 300,
     slidesToShow: 1,
@@ -1262,6 +1283,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _modules_slide_home_slide_home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/slide-home/slide-home */ "./src/blocks/modules/slide-home/slide-home.js");
 /* harmony import */ var _modules_slide_home_slide_home__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_slide_home_slide_home__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _modules_partners_partners__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/partners/partners */ "./src/blocks/modules/partners/partners.js");
+/* harmony import */ var _modules_partners_partners__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_partners_partners__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 
