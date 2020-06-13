@@ -171,9 +171,21 @@
   !*** ./src/blocks/modules/header/header.js ***!
   \*********************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-
+/* WEBPACK VAR INJECTION */(function($) {$(function () {
+  $("#my-menu").mmenu({
+    extensions: ["theme-light", "border-none", "position-front", "position-left", "shadow-page", "pagedim-black"],
+    navbar: {
+      title: "\n        <img src=\"../../img/svg/logo.svg\" alt=\"\">\n        <a class=\"navbar-accout\" href=\"#\"><img src=\"./img/svg/user.svg\" alt=\"\"></a>\n        "
+    },
+    "navbars": [{
+      "position": "bottom",
+      "content": ['<a href="#"><i class="fa fa-youtube-play"></i></a>', '<a href="#"><i class="fa fa-vk"></i></a>', '<a href="#"><i class="fa fa-facebook"></i></a>', '<a href="#"><i class="fa fa-instagram"></i></a>']
+    }]
+  });
+});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
@@ -1308,6 +1320,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
+
+__webpack_require__(/*! mmenu-js */ "./node_modules/mmenu-js/src/mmenu.js");
 
 /***/ })
 

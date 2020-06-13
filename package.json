@@ -69,6 +69,7 @@
     },
     "dependencies": {
         "jquery": "^3.5.1",
+        "mmenu-js": "^8.5.13",
         "slick-carousel": "^1.8.1",
         "smart-grid": "^2.1.2"
     },
