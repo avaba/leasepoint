@@ -1,0 +1,32 @@
+$pfx: "product";
+
+.#{$pfx} {
+  @include col();
+  @include size(3);
+  text-align: center;
+  margin-bottom: 30px;
+  color: $text;
+  &:hover &{
+    &__title {
+      color: $accent;
+    }
+  }
+  span {
+    margin: 5px 0;
+    display: block;
+  }
+  &__title {
+    font-size: 20px;
+  }
+  &__month {
+    background: $accent2;
+    color: $white;
+    display: inline-block !important;
+    font-weight: 500;
+    padding: 5px 16px;
+    margin: 20px 0;
+  }
+  &__price {
+    font-weight: bold;
+  }
+}
