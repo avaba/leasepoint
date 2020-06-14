@@ -1,0 +1,28 @@
+$pfx: "news-page";
+
+.#{$pfx} {
+  &__head {
+    padding: 100px 0;
+    background-size: cover;
+    background-position: 50%;
+    @include row-flex();
+    @include md(justify-content, center);
+    margin: 0;
+    &_body {
+      @include col();
+      @include size(9);
+      text-align: center;
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(8px);
+      border-radius: 4px;
+      padding: 50px;
+      &-data {
+        display: inline-block;
+        margin-bottom: 20px;
+        border-bottom: 2px solid $accent2;
+        padding: 0px 10px 5px 10px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
