@@ -9,6 +9,7 @@ $pfx: "header";
 	top: 0;
 	width: 100%;
 	z-index: 999;
+	box-shadow: 0px 4px 10px rgba(38, 38, 38, 0.25);
 	&__wrap {
 		@include row-flex();
 		@include md(justify-content, space-between);
