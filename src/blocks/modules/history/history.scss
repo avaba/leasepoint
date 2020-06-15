@@ -1,0 +1,98 @@
+$pfx: "history";
+
+.#{$pfx} {
+  margin-top: 50px;
+  &__tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    max-width: 600px;
+    background: #F3F3F3;
+    border-radius: 4px;
+    height: 33px;
+    line-height: 33px;
+    font-weight: 500;
+    text-align: center;
+    overflow: hidden;
+    &_item {
+      flex-grow: 1;
+      &:hover {
+        cursor: pointer;
+      }
+      &--active {
+        background: $accent2;
+        color: $white;
+        border-radius: 4px;
+      }
+    }
+  }
+  &__content {
+    display: none;
+    &--active {
+      display: block;
+      .history-slider {
+        height: auto;
+        width: auto;
+      }
+    }
+  }
+}
+
+.#{$pfx}-slider {
+  margin: 0 -15px;
+  padding: 0 60px;
+  padding-bottom: 70px;
+  height: 0;
+  width: 0;
+  .slick-prev {
+    left: 0;
+    background: #F3F3F3;
+  }
+  .slick-next {
+    right: 0;
+    background: #F3F3F3;
+  }
+  .#{$pfx}-item {
+    display: block;
+    margin: 10px 15px;
+    color: #000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    &__head {
+      min-height: 230px;
+      display: block;
+      background-size: cover;
+      background-position: 50%;
+      display: flex;
+      border-radius: 4px;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10px;
+      &_title {
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(8px);
+        text-align: center;
+        display: block;
+        border-radius: 4px;
+        padding: 15px 0;
+        &-data {
+          display: inline-block;
+          margin-bottom: 20px;
+          border-bottom: 2px solid $accent2;
+          padding: 0px 10px 5px 10px;
+        }
+        &-name {
+          display: block;
+          font-size: 20px;
+          font-weight: 500;
+        }
+      }
+    } 
+    &__text {
+      display: block;
+      font-size: 18px;
+      padding: 20px 10px;
+    }
+  }
+}

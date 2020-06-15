@@ -189,6 +189,34 @@
 
 /***/ }),
 
+/***/ "./src/blocks/modules/history/history.js":
+/*!***********************************************!*\
+  !*** ./src/blocks/modules/history/history.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {$(function () {
+  $('.history-slider').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1
+  });
+  $('.history__tabs').on('click', '.history__tabs_item:not(.history__tabs_item--active)', function () {
+    $(this).addClass('history__tabs_item--active').siblings().removeClass('history__tabs_item--active');
+  });
+  $('.history__tabs_item').on('click', function () {
+    var target = $(this).data('target');
+    $('.history__content[data-id=' + target + ']').addClass('history__content--active').siblings().removeClass('history__content--active');
+    $('.history-slider').slick('setPosition');
+  });
+});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
 /***/ "./src/blocks/modules/partners/partners.js":
 /*!*************************************************!*\
   !*** ./src/blocks/modules/partners/partners.js ***!
@@ -1297,6 +1325,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_slide_home_slide_home__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_slide_home_slide_home__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _modules_partners_partners__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/partners/partners */ "./src/blocks/modules/partners/partners.js");
 /* harmony import */ var _modules_partners_partners__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_partners_partners__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _modules_history_history__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/history/history */ "./src/blocks/modules/history/history.js");
+/* harmony import */ var _modules_history_history__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_history_history__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 

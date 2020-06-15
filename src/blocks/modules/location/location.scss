@@ -1,0 +1,60 @@
+$pfx: "location";
+
+.#{$pfx} {
+  &__wrap {
+    @include row-flex();
+    @include md(justify-content, center);
+    .location-item {
+      @include col();
+      @include size(4);
+      margin-bottom: 30px;
+      display: flex;
+    }
+  }
+}
+
+.#{$pfx}-item {
+  &__link {
+    display: block;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    display: block;
+    overflow: hidden;
+    color: $text;
+  }
+  &__head {
+    height: 170px;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    &-title {
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(8px);
+      border-radius: 4px;
+      display: block;
+      flex-grow: 1;
+      text-align: center;
+      span {
+        display: inline-block;
+        margin-bottom: 20px;
+        border-bottom: 2px solid $accent2;
+        padding: 0px 10px 5px 10px;
+        margin: 30px 0;
+        color: #000;
+        font-weight: 500;
+        font-size: 22px;
+      }
+    }
+  }
+  &__body {
+    padding: 10px;
+    display: block;
+    color: #6B6B6B;
+    b {
+      color: #000;
+    }
+  }
+}
