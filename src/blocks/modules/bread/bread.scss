@@ -3,24 +3,17 @@ $pfx: "bread";
 .#{$pfx} {
   background: #0083C3;
   color: $white;
-  padding: 10px 0;
   font-size: 14px;
-  &__wrap {
+  &__link {
+    color: $white;
     display: flex;
-    span {
-      margin-right: 5px;
-      &:last-of-type {
-        margin-right: 0;
-      }
+    align-items: center;
+    line-height: 33px;
+    img {
+      margin-right: 10px;
     }
-    a {
-      color: $white;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-    &_title {
-      color: #dcdcdc;
+    &:hover {
+      color: #e8e8e8;
     }
   }
 }

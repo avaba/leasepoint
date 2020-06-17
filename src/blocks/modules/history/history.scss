@@ -17,6 +17,7 @@ $pfx: "history";
     overflow: hidden;
     &_item {
       flex-grow: 1;
+      color: $accent2;
       &:hover {
         cursor: pointer;
       }

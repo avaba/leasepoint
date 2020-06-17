@@ -224,15 +224,19 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {$(function () {
-  $('.partners-slider').slick({
+/* WEBPACK VAR INJECTION */(function($) {function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+$(function () {
+  $('.partners-slider').slick(_defineProperty({
     dots: true,
     infinite: false,
     arrows: false,
     speed: 300,
     slidesToShow: 4,
-    slidesToScroll: 1
-  });
+    slidesToScroll: 4,
+    autoplay: true,
+    autoplaySpeed: 4000
+  }, "infinite", true));
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
@@ -245,14 +249,18 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {$(function () {
-  $('.slide-home__slide').slick({
+/* WEBPACK VAR INJECTION */(function($) {function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+$(function () {
+  $('.slide-home__slide').slick(_defineProperty({
     dots: true,
     infinite: false,
     speed: 300,
     slidesToShow: 1,
-    slidesToScroll: 1
-  });
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000
+  }, "infinite", true));
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 

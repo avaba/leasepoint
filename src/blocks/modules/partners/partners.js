@@ -5,6 +5,9 @@ $(function(){
     arrows: false,
     speed: 300,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    infinite: true,
   });
 });

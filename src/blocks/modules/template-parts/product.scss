@@ -16,13 +16,14 @@ $pfx: "product";
     display: block;
   }
   &__title {
+    font-weight: 500;
     font-size: 20px;
   }
   &__month {
     background: $accent2;
     color: $white;
     display: inline-block !important;
-    font-weight: 500;
+    font-weight: bold;
     padding: 5px 16px;
     margin: 20px 0;
   }

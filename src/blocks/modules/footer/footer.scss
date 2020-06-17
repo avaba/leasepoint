@@ -73,5 +73,9 @@ $pfx: "footer";
     background: #0083C4;
     color: $white;
     overflow: hidden;
+    font-size: 12px;
+    p {
+      margin: 9px 0;
+    }
   }
 }

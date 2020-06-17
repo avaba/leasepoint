@@ -2,20 +2,26 @@ $pfx: "news-page";
 
 .#{$pfx} {
   &__head {
-    padding: 100px 0;
     background-size: cover;
     background-position: 50%;
+    min-height: 400px;
     @include row-flex();
-    @include md(justify-content, center);
+    justify-content: center;
+    align-items: center;
     margin: 0;
     &_body {
       @include col();
-      @include size(9);
+      @include size(10);
       text-align: center;
       background: rgba(255, 255, 255, 0.5);
       backdrop-filter: blur(8px);
       border-radius: 4px;
-      padding: 50px;
+      padding: 25px 50px;
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
       &-data {
         display: inline-block;
         margin-bottom: 20px;
@@ -24,5 +30,19 @@ $pfx: "news-page";
         margin-bottom: 40px;
       }
     }
+  }
+}
+
+.news-text {
+  width: 900px;
+  max-width: 100%;
+  margin: 30px auto;
+  h2 {
+    text-align: center;
+    font-size: 22px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.4;
   }
 }
